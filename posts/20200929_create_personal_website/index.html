@@ -1,7 +1,7 @@
 <!doctype html><html lang=en-us>
 <head>
 <title>Create a personal website for (almost) free in under 5 minutes // ThoughtBox</title>
-<link rel="shortcut icon" href=img/favicon.ico>
+<link rel="shortcut icon" href=/img/favicon.ico>
 <meta charset=utf-8>
 <meta name=generator content="Hugo 0.88.1">
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -58,7 +58,7 @@ Sep 29, 2021
 <h4 id=create-a-githubhttpswwwgithubcom-account>Create a <a href=https://www.github.com>Github</a> account</h4>
 <a href=https://www.github.com>Github</a> essentially provides ability to store and manage source code for computer programs. Since a website is also a computer program, <a href=https://www.github.com>Github</a> serves as an excellent place to store it. We will later see that <a href=https://www.github.com>Github</a> also helps make the website available on the internet (we will call this process publishing the website). To create a <a href=https://www.github.com>Github</a> account, go to the <a href=https://www.github.com>website</a> and signup. In the process of signing up, you will be prompted to choose a <strong>USERNAME</strong>. Choose it carefully as it will become a part of your website address</li>
 <li>
-<h4 id=create-a-githubhttpswwwgithubcom-by-following-the-steps-listed-herehttpsdocsgithubcomenget-startedquickstartcreate-a-repo>Create a <a href=https://www.github.com>Github</a> by following the steps listed <a href=https://docs.github.com/en/get-started/quickstart/create-a-repo>here</a></h4>
+<h4 id=create-a-githubhttpswwwgithubcom-repository-by-following-the-steps-listed-herehttpsdocsgithubcomenget-startedquickstartcreate-a-repo>Create a <a href=https://www.github.com>Github</a> repository by following the steps listed <a href=https://docs.github.com/en/get-started/quickstart/create-a-repo>here</a></h4>
 </li>
 <li>
 <h4 id=use-thesehttpsgit-scmcombookenv2getting-started-installing-git-steps-to-install-git-on-your-computer>Use <a href=https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>these</a> steps to install git on your computer</h4>
@@ -80,7 +80,7 @@ By now, I trust you have built some understanding of terminal. You will need to 
 <li>
 <h4 id=create-a-github-actionhttpsgithubcomfeaturesactions-to-publish-the-website-whenever-it-is-updated>Create a <a href=https://github.com/features/actions>Github action</a> to publish the website whenever it is updated</h4>
 <p>We are almost there. In this step, we will look at how to automatically make the website available to the prying eyes of the world (publish) when it is updated in the <a href=https://www.github.com>Github</a> repository</p>
-<p>Github actions are like <a href=https://support.apple.com/guide/shortcuts/welcome/ios>shortcuts on your iphone</a>. Their underscoring feature is that they trigger an response (or a series of responses) when they observe a users input. Here, we will utilize <a href=https://github.com/features/actions>Github action</a> to generate and deploy (response) a website when a user updates (input) it.</p>
+<p>Github actions are like <a href=https://support.apple.com/guide/shortcuts/welcome/ios>shortcuts on your iphone</a>. Their underscoring feature is that they trigger a response (or a series of responses) when they observe a users input. Here, we will utilize <a href=https://github.com/features/actions>Github action</a> to generate and deploy (response) a website when a user updates (input) it.</p>
 <ol>
 <li>Create a <a href=https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>personal access token</a> that will let your <a href=https://www.github.com>Github</a> securely write to a repository. Grant it write access</li>
 <li>Use this personal access token to <a href=https://docs.github.com/en/actions/security-guides/encrypted-secrets>create an encrypted secret</a> for your repository.</li>
@@ -127,14 +127,14 @@ By now, I trust you have built some understanding of terminal. You will need to 
                   <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./public</span>
 </code></pre></div><ol start=7>
 <li>
-<h4 id=a-nameupdatecommit-and-push-the-modifications-to-your-githubhttpswwwgithubcom-account-using-the-following-commandsa>Commit and push the modifications to your <a href=https://www.github.com>Github</a> account using the following commands</h4>
+<h4 id=commit-and-push-the-modifications-to-your-githubhttpswwwgithubcom-account-using-the-following-commands>Commit and push the modifications to your <a href=https://www.github.com>Github</a> account using the following commands</h4>
 </li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>    cd /path/website
     git add .
     git commit -m <span style=color:#e6db74>&#34;YOUR COMMIT MESSAGE&#34;</span>
     git push -u origin main
-</code></pre></div><p>And Viola! There you have it. Log on to <code>https://www.USERNAME.github.io</code> and you will see the contents of your website in full glory, free of cost! And every time you make a new post, you just have to update the <a href=https://www.github.com>Github</a> repository using step <a href=#UPDATE>7</a> and it will be available in your website as soon as it the update takes hold.</p>
+</code></pre></div><p>And viola! There you have it. Log on to <code>https://www.USERNAME.github.io</code> and you will see the contents of your website in full glory, free of cost! And every time you make a new post, you just have to push it to the <a href=https://www.github.com>Github</a> repository using the above step and it will be available in your website as soon as it the update takes hold.</p>
 <h3 id=next-steps>Next Steps</h3>
 <p>You haven&rsquo;t had to spend a penny on your website till now. Isn&rsquo;t that something. Now you can play around with your site as much as you want. You can modify how it looks by using one of the available <a href=https://themes.gohugo.io/>themes</a>, or customize a part of your website using custom css. Don&rsquo;t like the address of your website (frankly, I think USERNAME.github.io is cumbersome and unappealing as well), use a <a href=https://themes.gohugo.io/>custom domain</a> for your site. The possibilities only stop with your imagination (and with the ability of your computer)</p>
 </div>
